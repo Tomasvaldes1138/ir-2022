@@ -1,0 +1,322 @@
+.title{
+    margin-bottom: 4rem;
+    font-weight: $regular;
+}
+
+.grid-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.producto-container{
+    border: 1px solid $priceBefore;
+    width: 28rem;
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow .2s ease;
+
+    &:hover{
+        border: 0px solid $black;
+        -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.4);
+        -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.4);
+        box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.4);
+    }
+
+    .descuento-container{
+        background-color: $lightBlue;
+        width: 6rem;
+        .descuento{
+            color: $white;
+            text-align: center;
+        }
+    }
+    .img-container{
+        margin: 4rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    .info{
+        padding: 0 1rem;
+        .nombre-producto{
+            text-transform: uppercase;
+            margin-bottom: .5rem;
+            font-weight: $light;
+            font-size: $fontSize;
+        }
+        .tipo-categoria{
+            font-weight: $bold;
+        }
+        .pb-container{
+            margin-top: .5rem;
+            .precios{
+                column-gap: 1rem;
+                .precio-anterior{
+                    color: $priceBefore;
+                    text-decoration: line-through;
+                    font-weight: $bold;
+                }
+                .precio-actual{
+                    color: $priceNow;
+                    font-weight: $bold;
+                }
+            }
+
+        }
+    }
+}
+
+.btn-agregar{
+    background-color: $lightBlue;
+    padding:  .8rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    transition: background-color .2s ease;
+        &:hover{
+          background-color: #2764c0;
+        }
+    .nombre-agregar{
+        font-size: 1.4rem;
+        color: $white;
+        font-weight: $bold;
+    }
+}
+
+.entrega-container{
+    margin-top: 8rem;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.left{
+    width: 48rem;
+
+    .form-entrega1{
+        margin: 0;
+        padding: 2rem 4rem;
+        margin: 3rem 0;
+
+    }
+}
+.right{
+
+    .row-producto{
+        column-gap: 2rem;
+        margin-bottom: 2rem;
+
+        .c-cantidad{
+            border: 1px solid $black;
+            padding: .8rem 1.2rem;
+        }
+        
+        .nombre-2{
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-left: 2rem;
+        }
+        
+        .precio{
+            font-weight: $bold;
+        }
+    }
+}
+
+.total{
+    border-top: 1px solid $black;
+    margin-top: 2rem;
+    padding: 4rem 0;
+}
+
+.alerta-exito{
+    background-color: $lightBlue;
+    padding: 1.5rem 5rem;
+    margin: 3rem 0;
+    p{
+        color: $white;
+        text-align: center;
+    }
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.datos-transferencia{
+    margin-top: 2rem;
+    background-color: $white;
+    padding: 2rem;
+    border: 1px solid $black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+
+}
+
+.monto{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.imagen-comprobante{
+    background-image: url(../../../../img/transferencia.jpg);
+    width: 2rem;
+    height: 2rem;
+    color: red;
+}
+
+.subir-imagen{
+    margin: 3rem 0;
+    row-gap: 1rem;
+
+    .enviar-comprobante{
+        width: 15.5rem;
+    }
+}
+
+.tabla-detalle{
+    border-collapse: collapse;
+    margin: 3rem 0;
+    .head-info-orden{
+        width: min-content;
+        text-align: center;
+        color: $white;
+        background-color: $lightBlue;
+        width: 90rem;
+        border: 1px solid $black;
+        padding: 2rem 0;      
+        font-size: 2rem;  
+    }
+    .head-row{
+        width: 20rem;
+        padding: 2rem 1rem;
+        border: .5px solid $black;
+        background-color: $footerBack;
+    }
+
+
+    .w-0{
+        padding: 0;
+    }
+
+    .head-row{
+        text-align: left;
+    }
+
+}
+
+.info-row{
+    padding: 2rem 1rem;
+    border: .5px solid $black;
+    background-color: $inputBack;
+}
+
+.tabla-listado{
+    border-collapse: collapse;
+
+    .w-s{
+        width: 6rem;
+    }
+    .w-m{
+        width: 18rem;
+    }
+    .w-l{
+        width: 60rem;
+    }
+    .head-listado{
+        padding: 2rem 1rem;
+        background-color: $lightBlue;
+        color: $white;
+        border: .5px solid $black;
+
+    }
+    .info-row{
+        border: .5px solid $black;
+    }
+    .t-foot{
+        background-color: $footerBack;
+        border: .5px solid $black;
+
+        td{
+            font-size: 2rem;
+            padding: 1.5rem 1rem;
+        }
+
+    }
+}
+
+.comprobante-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+    background-color: $white;
+}
+
+.producto-btn-container{
+    margin-bottom: 3rem;
+}
+
+.remover-btn{
+    padding: 1.2rem 2rem;
+}
+
+.hide-form{
+    display: none!important;
+}
+.prueba12{
+    background-color: red;
+}
+.btn-enviar{
+    color: $white;
+    padding: .1rem .6rem;
+    font-weight: $bold;
+}
+
+/*Mis Ordenes */
+.form-ordenes{
+    background-color: $white;
+    padding: 2rem;
+    width: 60rem;
+    
+
+    .radio-opcion{
+        padding: 1rem 0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        column-gap: 2rem;
+
+        input{
+            border: 0px;
+            width: 10%;
+            height: 2.5rem;
+        }
+
+        p{
+            font-size: 1.8rem;
+        }
+
+        label{
+            font-size: 2rem;
+        }
+    }
+
+    .btn-orden{
+        margin-left: 1.6rem;
+        margin-top: 1.5rem;
+        width: 20rem;
+        color: $white;
+        border-radius: 6px;
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;    
+    }
+}
+

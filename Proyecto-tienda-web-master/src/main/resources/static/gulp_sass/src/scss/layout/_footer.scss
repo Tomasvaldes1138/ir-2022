@@ -1,0 +1,59 @@
+.footer{
+    margin-top: 6rem;
+    background-color: $footerBack;
+    padding: 5rem 0;
+}
+
+.f-title{
+    font-weight: $regular;
+    margin-bottom: 2.5rem;
+}
+.f-link{
+    margin-bottom: 1.5rem;
+    font-size: $fontSmall;
+}
+
+.logo-f{
+    font-size: 2.5rem;
+}
+
+.s-container{
+    max-width: 38rem;
+}
+
+.social-media{
+    display: flex;
+    column-gap: .5rem;
+    margin-top: 1rem;
+    justify-content: left;
+}
+
+.s-btn-container{
+    display: flex;
+    justify-content: left;
+    .input-s{
+        border-radius: 2rem 0 0 2rem;
+        outline: none;
+        padding-left: 1rem;
+    }
+    .btn-suscribirse{
+        background-color: $lightBlue;
+        border-radius: 0 2rem 2rem 0;
+        padding: 1rem;
+        border-top:1px solid $black;
+        border-bottom:1px solid $black;
+        border-right: 1px solid $black;
+        margin-left: -1rem;
+        p{
+            color: $white;
+            text-transform: uppercase;
+            font-weight: $bold;
+        }
+    }
+}
+
+.copyright{
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+    font-size: $fontSmall;
+}

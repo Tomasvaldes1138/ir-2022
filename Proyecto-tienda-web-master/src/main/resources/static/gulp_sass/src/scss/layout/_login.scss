@@ -1,0 +1,29 @@
+.reg-background{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-registro{
+    h1{
+        margin-bottom: 2rem;
+    }
+}
+
+.cerrar_sesion{
+    padding: 1rem;
+    text-align: center;
+}
+
+.home-icon{
+    position: absolute;
+    margin-left: 4rem;
+    width: 5rem;
+    height: 5rem;
+}
